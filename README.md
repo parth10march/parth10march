@@ -118,15 +118,20 @@ fun_fact: >
 
 <!-- STREAK STATS WITH GLOW -->
 <a href="https://github.com/parth10march">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=parth10march&theme=tokyonight_duo&hide_border=true&background=0D1117&stroke=6C63FF&ring=6C63FF&fire=FF6B6B&currStreakLabel=6C63FF&sideLabels=C9D1D9&dates=8B949E" />
+<img src="https://streak-stats.demolab.com/?user=parth10march&theme=tokyonight_duo&hide_border=true&background=0D1117&stroke=6C63FF&ring=6C63FF&fire=FF6B6B&currStreakLabel=6C63FF&sideLabels=C9D1D9&dates=8B949E" alt="Streak Stats" />
 </a>
 
 <br/><br/>
 
 <!-- ACTIVITY GRAPH -->
 <a href="https://github.com/parth10march">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parth10march&bg_color=0D1117&color=6C63FF&line=6C63FF&point=FFFFFF&area_color=6C63FF&area=true&hide_border=true&custom_title=📈%20Contribution%20Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=parth10march&bg_color=0D1117&color=6C63FF&line=6C63FF&point=FFFFFF&area_color=6C63FF&area=true&hide_border=true&custom_title=%F0%9F%93%88%20Contribution%20Graph&radius=16" alt="Activity Graph" />
 </a>
+
+<br/>
+
+<!-- WAKATIME / CODING STATS ALTERNATIVE -->
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=parth10march&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&text_color=C9D1D9&layout=compact" alt="Wakatime Stats" />
 
 </div>
 
@@ -139,7 +144,12 @@ fun_fact: >
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=parth10march&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" />
+<img src="https://github-profile-trophy.vercel.app/?username=parth10march&theme=algolia&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15" alt="Trophies" />
+
+<br/>
+
+<!-- Fallback: If trophies don't load, show achievement badges instead -->
+<img src="https://img.shields.io/badge/🏆_Trophies-Loading..._Refresh_Page-6C63FF?style=flat-square&labelColor=0D1117" alt="Trophy hint" />
 
 </div>
 
