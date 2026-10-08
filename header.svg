@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="850" height="280">
+  <style>
+    @keyframes dash { to { stroke-dashoffset: -48; } }
+    @keyframes b1 { 0%,100%{opacity:.1} 50%{opacity:.85} }
+    @keyframes b2 { 0%,100%{opacity:.7} 45%{opacity:.05} }
+    @keyframes b3 { 0%,20%,100%{opacity:.1} 10%{opacity:.95} }
+    @keyframes b4 { 0%,40%,100%{opacity:.75} 20%{opacity:.05} 70%{opacity:.3} }
+    @keyframes fp { 0%,100%{opacity:.25} 50%{opacity:.6} }
+    @keyframes glow-line { 0%,100%{stroke-opacity:.08} 50%{stroke-opacity:.2} }
+  </style>
+
+  <!-- Background -->
+  <rect width="850" height="280" fill="#0d1117" rx="6"/>
+
+  <!-- Corner marks (technical drawing feel) -->
+  <g opacity=".2" stroke="#6C63FF" stroke-width="1" fill="none">
+    <polyline points="2,16 2,2 16,2"/>
+    <polyline points="834,2 848,2 848,16"/>
+    <polyline points="848,264 848,278 834,278"/>
+    <polyline points="16,278 2,278 2,264"/>
+  </g>
+
+  <!-- Grid dots -->
+  <g fill="#6C63FF" opacity=".04">
+    <rect x="49" y="39" width="2" height="2"/><rect x="149" y="39" width="2" height="2"/><rect x="249" y="39" width="2" height="2"/><rect x="349" y="39" width="2" height="2"/><rect x="449" y="39" width="2" height="2"/><rect x="549" y="39" width="2" height="2"/><rect x="649" y="39" width="2" height="2"/><rect x="749" y="39" width="2" height="2"/>
+    <rect x="49" y="99" width="2" height="2"/><rect x="149" y="99" width="2" height="2"/><rect x="249" y="99" width="2" height="2"/><rect x="349" y="99" width="2" height="2"/><rect x="449" y="99" width="2" height="2"/><rect x="549" y="99" width="2" height="2"/><rect x="649" y="99" width="2" height="2"/><rect x="749" y="99" width="2" height="2"/>
+    <rect x="49" y="159" width="2" height="2"/><rect x="149" y="159" width="2" height="2"/><rect x="249" y="159" width="2" height="2"/><rect x="349" y="159" width="2" height="2"/><rect x="449" y="159" width="2" height="2"/><rect x="549" y="159" width="2" height="2"/><rect x="649" y="159" width="2" height="2"/><rect x="749" y="159" width="2" height="2"/>
+    <rect x="49" y="219" width="2" height="2"/><rect x="149" y="219" width="2" height="2"/><rect x="249" y="219" width="2" height="2"/><rect x="349" y="219" width="2" height="2"/><rect x="449" y="219" width="2" height="2"/><rect x="549" y="219" width="2" height="2"/><rect x="649" y="219" width="2" height="2"/><rect x="749" y="219" width="2" height="2"/>
+  </g>
+
+  <!-- Horizontal guide lines -->
+  <line x1="30" y1="140" x2="180" y2="140" stroke="#6C63FF" stroke-width=".5" style="animation:glow-line 5s ease-in-out infinite"/>
+  <line x1="670" y1="140" x2="820" y2="140" stroke="#6C63FF" stroke-width=".5" style="animation:glow-line 5s ease-in-out infinite;animation-delay:2.5s"/>
+
+  <!-- Main name text — animated dashed outlines -->
+  <text x="425" y="148" text-anchor="middle"
+    font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-weight="700" font-size="50"
+    fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4 2" stroke-linecap="round"
+    style="animation:dash 4s linear infinite">Parth Arjun Shukla</text>
+
+  <!-- Subtitle -->
+  <text x="425" y="195" text-anchor="middle"
+    font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13"
+    fill="#6C63FF" opacity=".7" letter-spacing="2">AI · ML · Deep Learning · NLP · Computer Vision</text>
+
+  <!-- Version tag -->
+  <text x="820" y="268" text-anchor="end"
+    font-family="ui-monospace,SFMono-Regular,monospace" font-size="9"
+    fill="#6C63FF" opacity=".3">v2.0</text>
+
+  <!-- Selection frame around "P" -->
+  <g style="animation:fp 4s ease-in-out infinite">
+    <rect x="200" y="103" width="44" height="62" stroke="#6C63FF" stroke-width="1" fill="none" opacity=".45"/>
+    <!-- Corner handles -->
+    <rect x="197" y="100" width="5" height="5" fill="#6C63FF" opacity=".9"/>
+    <rect x="241" y="100" width="5" height="5" fill="#6C63FF" opacity=".9"/>
+    <rect x="197" y="162" width="5" height="5" fill="#6C63FF" opacity=".9"/>
+    <rect x="241" y="162" width="5" height="5" fill="#6C63FF" opacity=".9"/>
+  </g>
+
+  <!-- Frame dimension label -->
+  <text x="202" y="95"
+    font-family="ui-monospace,SFMono-Regular,monospace" font-size="10"
+    fill="#6C63FF" opacity=".45">P  44 × 62</text>
+
+  <!-- ======= SPECKS (blinking particles) ======= -->
+
+  <!-- Near the selection frame -->
+  <rect x="190" y="92" width="3" height="3" fill="#6C63FF" style="animation:b1 1.8s infinite;animation-delay:.2s"/>
+  <rect x="252" y="108" width="2" height="2" fill="#6C63FF" style="animation:b2 2.1s infinite;animation-delay:.5s"/>
+  <rect x="256" y="133" width="5" height="5" fill="none" stroke="#6C63FF" stroke-width="1" style="animation:b3 2.4s infinite;animation-delay:.1s"/>
+  <rect x="254" y="158" width="2" height="2" fill="#6C63FF" style="animation:b4 1.6s infinite;animation-delay:.8s"/>
+  <rect x="230" y="172" width="3" height="3" fill="#6C63FF" style="animation:b1 2.2s infinite;animation-delay:.4s"/>
+  <rect x="205" y="175" width="2" height="2" fill="#6C63FF" style="animation:b2 1.9s infinite;animation-delay:.3s"/>
+  <rect x="186" y="153" width="3" height="3" fill="none" stroke="#6C63FF" stroke-width="1" style="animation:b3 2.5s infinite;animation-delay:.6s"/>
+  <rect x="183" y="118" width="5" height="5" fill="none" stroke="#6C63FF" stroke-width="1" style="animation:b4 2s infinite"/>
+
+  <!-- Scattered across the canvas -->
+  <rect x="120" y="65" width="3" height="3" fill="#6C63FF" style="animation:b1 2.3s infinite;animation-delay:.7s"/>
+  <rect x="680" y="115" width="2" height="2" fill="#6C63FF" style="animation:b2 1.7s infinite;animation-delay:.9s"/>
+  <rect x="728" y="78" width="5" height="5" fill="none" stroke="#6C63FF" stroke-width="1" style="animation:b3 2.6s infinite;animation-delay:.2s"/>
+  <rect x="90" y="210" width="3" height="3" fill="#6C63FF" style="animation:b4 1.5s infinite;animation-delay:.4s"/>
+  <rect x="600" y="195" width="2" height="2" fill="#6C63FF" style="animation:b1 2s infinite;animation-delay:.6s"/>
+  <rect x="758" y="208" width="3" height="3" fill="none" stroke="#6C63FF" stroke-width="1" style="animation:b2 2.3s infinite;animation-delay:.1s"/>
+  <rect x="380" y="68" width="2" height="2" fill="#6C63FF" style="animation:b3 1.8s infinite;animation-delay:.8s"/>
+  <rect x="500" y="220" width="3" height="3" fill="#6C63FF" style="animation:b4 2.1s infinite;animation-delay:.3s"/>
+  <rect x="318" y="228" width="5" height="5" fill="none" stroke="#6C63FF" stroke-width="1" style="animation:b1 2.5s infinite;animation-delay:.5s"/>
+  <rect x="560" y="73" width="2" height="2" fill="#6C63FF" style="animation:b2 1.9s infinite;animation-delay:.7s"/>
+  <rect x="440" y="240" width="2" height="2" fill="#6C63FF" style="animation:b3 2.2s infinite;animation-delay:.9s"/>
+  <rect x="70" y="130" width="3" height="3" fill="#6C63FF" style="animation:b4 2.4s infinite;animation-delay:.15s"/>
+
+  <!-- Accent dot in large outlined speck center -->
+  <rect x="730" y="80" width="1" height="1" fill="#6C63FF" style="animation:b3 2.6s infinite;animation-delay:.2s"/>
+
+</svg>
