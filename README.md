@@ -59,7 +59,32 @@ fun_fact: >
 
 ---
 
-<!-- TECH STACK -->
+<!-- GITHUB STATS & CONTRIBUTIONS (MOVED JUST BELOW ABOUT ME) -->
+<div align="center">
+
+## 📊 GitHub Stats & Activity
+
+<br/>
+
+<a href="https://github.com/parth10march">
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=parth10march&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=6C63FF&text_color=C9D1D9&ring_color=6C63FF&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/parth10march">
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=parth10march&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&text_color=C9D1D9&langs_count=8" alt="Top Languages"/>
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/parth10march">
+<img src="https://streak-stats.demolab.com/?user=parth10march&theme=tokyonight_duo&hide_border=true&background=0D1117&stroke=6C63FF&ring=6C63FF&fire=FF6B6B&currStreakLabel=6C63FF&sideLabels=C9D1D9&dates=8B949E" alt="Streak Stats"/>
+</a>
+
+</div>
+
+---
+
+<!-- TECH ARSENAL (REACT BITS PILLNAV CAPSULES) -->
 <div align="center">
 
 ## ⚡ Tech Arsenal
@@ -83,31 +108,6 @@ fun_fact: >
 ### ☁️ Cloud & Tools
 
 <img src="https://raw.githubusercontent.com/parth10march/parth10march/main/pill_tools.svg" alt="Cloud & Tools" />
-
-</div>
-
----
-
-<!-- GITHUB STATS -->
-<div align="center">
-
-## 📊 GitHub Stats
-
-<br/>
-
-<a href="https://github.com/parth10march">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=parth10march&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=6C63FF&text_color=C9D1D9&ring_color=6C63FF&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://github.com/parth10march">
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=parth10march&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&text_color=C9D1D9&langs_count=8" alt="Top Languages"/>
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/parth10march">
-<img src="https://streak-stats.demolab.com/?user=parth10march&theme=tokyonight_duo&hide_border=true&background=0D1117&stroke=6C63FF&ring=6C63FF&fire=FF6B6B&currStreakLabel=6C63FF&sideLabels=C9D1D9&dates=8B949E" alt="Streak Stats"/>
-</a>
 
 </div>
 
