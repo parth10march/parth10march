@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- TECHTEXT-STYLE ANIMATED HEADER -->
-<img src="./header.svg" width="100%" alt="Parth Arjun Shukla"/>
+<img src="https://raw.githubusercontent.com/parth10march/parth10march/main/header.svg" width="100%" alt="Parth Arjun Shukla"/>
 
 <br/>
 
