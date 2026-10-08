@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 90" width="100%" height="90">
+  <defs>
+    <!-- Chromatic Glowing Gradients -->
+    <radialGradient id="glow-purple" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6C63FF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#6C63FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-cyan" cx="70%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-pink" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#FF007F" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF007F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glass Specular Reflection Gradient -->
+    <linearGradient id="glass-shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Center Plaque Glass Gradient -->
+    <linearGradient id="plaque-glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.94"/>
+    </linearGradient>
+
+    <!-- Center Plaque Border Gradient -->
+    <linearGradient id="plaque-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6C63FF" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes orb-move-a {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(60px, 15px) scale(1.2); }
+    }
+    @keyframes orb-move-b {
+      0%, 100% { transform: translate(0px, 0px) scale(1.1); }
+      50% { transform: translate(-60px, -10px) scale(0.9); }
+    }
+    @keyframes orb-move-c {
+      0%, 100% { transform: translate(0px, 0px) scale(0.95); }
+      50% { transform: translate(30px, -15px) scale(1.15); }
+    }
+    @keyframes tile-shimmer {
+      0%, 100% { opacity: 0.55; }
+      50% { opacity: 0.95; }
+    }
+    .glow-a { animation: orb-move-a 9s ease-in-out infinite; }
+    .glow-b { animation: orb-move-b 11s ease-in-out infinite; }
+    .glow-c { animation: orb-move-c 8s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="820" height="90" fill="#0D1117" rx="12"/>
+
+  <!-- ================= CHROMATIC GLOWING LIGHTS ================= -->
+  <g opacity="0.65" style="mix-blend-mode: screen;">
+    <ellipse cx="220" cy="45" rx="180" ry="40" fill="url(#glow-purple)" class="glow-a"/>
+    <ellipse cx="600" cy="45" rx="190" ry="40" fill="url(#glow-cyan)" class="glow-b"/>
+    <ellipse cx="410" cy="45" rx="140" ry="35" fill="url(#glow-pink)" class="glow-c"/>
+  </g>
+
+  <!-- ================= GRID OF GLASS TILES ================= -->
+  <g class="glass-tiles">
+    <g transform="translate(10.0, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.0s ease-in-out infinite alternate; animation-delay: 0.0s;"/>
+    </g>
+    <g transform="translate(67.6, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.5s ease-in-out infinite alternate; animation-delay: 0.12s;"/>
+    </g>
+    <g transform="translate(125.1, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.0s ease-in-out infinite alternate; animation-delay: 0.24s;"/>
+    </g>
+    <g transform="translate(182.7, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.5s ease-in-out infinite alternate; animation-delay: 0.36s;"/>
+    </g>
+    <g transform="translate(240.3, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 6.0s ease-in-out infinite alternate; animation-delay: 0.48s;"/>
+    </g>
+    <g transform="translate(297.9, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.0s ease-in-out infinite alternate; animation-delay: 0.6s;"/>
+    </g>
+    <g transform="translate(355.4, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.5s ease-in-out infinite alternate; animation-delay: 0.72s;"/>
+    </g>
+    <g transform="translate(413.0, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.0s ease-in-out infinite alternate; animation-delay: 0.84s;"/>
+    </g>
+    <g transform="translate(470.6, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.5s ease-in-out infinite alternate; animation-delay: 0.96s;"/>
+    </g>
+    <g transform="translate(528.1, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 6.0s ease-in-out infinite alternate; animation-delay: 1.08s;"/>
+    </g>
+    <g transform="translate(585.7, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.0s ease-in-out infinite alternate; animation-delay: 1.2s;"/>
+    </g>
+    <g transform="translate(643.3, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.5s ease-in-out infinite alternate; animation-delay: 1.32s;"/>
+    </g>
+    <g transform="translate(700.9, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.0s ease-in-out infinite alternate; animation-delay: 1.44s;"/>
+    </g>
+    <g transform="translate(758.4, 10.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.5s ease-in-out infinite alternate; animation-delay: 1.56s;"/>
+    </g>
+    <g transform="translate(10.0, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 6.0s ease-in-out infinite alternate; animation-delay: 0.25s;"/>
+    </g>
+    <g transform="translate(67.6, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.0s ease-in-out infinite alternate; animation-delay: 0.37s;"/>
+    </g>
+    <g transform="translate(125.1, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.5s ease-in-out infinite alternate; animation-delay: 0.49s;"/>
+    </g>
+    <g transform="translate(182.7, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.0s ease-in-out infinite alternate; animation-delay: 0.61s;"/>
+    </g>
+    <g transform="translate(240.3, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.5s ease-in-out infinite alternate; animation-delay: 0.73s;"/>
+    </g>
+    <g transform="translate(297.9, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 6.0s ease-in-out infinite alternate; animation-delay: 0.85s;"/>
+    </g>
+    <g transform="translate(355.4, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.0s ease-in-out infinite alternate; animation-delay: 0.97s;"/>
+    </g>
+    <g transform="translate(413.0, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.5s ease-in-out infinite alternate; animation-delay: 1.09s;"/>
+    </g>
+    <g transform="translate(470.6, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.0s ease-in-out infinite alternate; animation-delay: 1.21s;"/>
+    </g>
+    <g transform="translate(528.1, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.5s ease-in-out infinite alternate; animation-delay: 1.33s;"/>
+    </g>
+    <g transform="translate(585.7, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 6.0s ease-in-out infinite alternate; animation-delay: 1.45s;"/>
+    </g>
+    <g transform="translate(643.3, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.0s ease-in-out infinite alternate; animation-delay: 1.57s;"/>
+    </g>
+    <g transform="translate(700.9, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 4.5s ease-in-out infinite alternate; animation-delay: 1.69s;"/>
+    </g>
+    <g transform="translate(758.4, 48.0)">
+      <rect width="51.6" height="32.0" rx="6" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.09" stroke-width="0.8"/>
+      <rect width="51.6" height="32.0" rx="6" fill="url(#glass-shine)" style="animation: tile-shimmer 5.0s ease-in-out infinite alternate; animation-delay: 1.81s;"/>
+    </g>
+  </g>
+
+  <!-- Center Frosted Glass Plaque -->
+  <g transform="translate(200.0, 17.0)">
+    <!-- Plaque backdrop shadow -->
+    <rect width="420" height="56" rx="28" fill="#000000" fill-opacity="0.4" transform="translate(0, 3)"/>
+    
+    <!-- Plaque glass surface -->
+    <rect width="420" height="56" rx="28" fill="url(#plaque-glass)" stroke="url(#plaque-border)" stroke-width="1.2"/>
+    
+    <!-- Plaque reflection highlight -->
+    <path d="M 15 1 Q 210.0 1 405 1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.3" fill="none"/>
+
+    <!-- Plaque Icon & Title -->
+    <text x="210.0" y="27" font-family="'Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" letter-spacing="1.2" fill="#FFFFFF" text-anchor="middle">
+      🌐  CONNECT WITH ME
+    </text>
+
+    <!-- Plaque Subtitle -->
+    <text x="210.0" y="43" font-family="ui-monospace,SFMono-Regular,monospace" font-size="10.5" font-weight="500" letter-spacing="1.5" fill="#6C63FF" opacity="0.8" text-anchor="middle">
+      // COLLABORATE &amp; GET IN TOUCH
+    </text>
+  </g>
+
+  <!-- Technical border accents -->
+  <g stroke="#6C63FF" stroke-width="1" fill="none" opacity="0.25">
+    <polyline points="2,12 2,2 12,2"/>
+    <polyline points="808,2 818,2 818,12"/>
+    <polyline points="818,78 818,88 808,88"/>
+    <polyline points="12,88 2,88 2,78"/>
+  </g>
+
+</svg>

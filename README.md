@@ -32,7 +32,12 @@
 
 <br/>
 
-## 🧙‍♂️ About Me
+<!-- SECTION 1: ABOUT ME (GLASS TILES ANIMATED BANNER) -->
+<div align="center">
+<img src="https://raw.githubusercontent.com/parth10march/parth10march/main/glass_about.svg" width="100%" alt="About Me"/>
+</div>
+
+<br/>
 
 ```yaml
 name: Parth Arjun Shukla
@@ -59,12 +64,12 @@ fun_fact: >
 
 ---
 
-<!-- GITHUB STATS & CONTRIBUTIONS (MOVED JUST BELOW ABOUT ME) -->
+<!-- SECTION 2: GITHUB STATS & ACTIVITY (GLASS TILES ANIMATED BANNER) -->
 <div align="center">
 
-## 📊 GitHub Stats & Activity
+<img src="https://raw.githubusercontent.com/parth10march/parth10march/main/glass_stats.svg" width="100%" alt="GitHub Stats & Activity"/>
 
-<br/>
+<br/><br/>
 
 <a href="https://github.com/parth10march">
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=parth10march&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=6C63FF&text_color=C9D1D9&ring_color=6C63FF&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
@@ -84,12 +89,12 @@ fun_fact: >
 
 ---
 
-<!-- TECH ARSENAL (REACT BITS PILLNAV CAPSULES) -->
+<!-- SECTION 3: TECH ARSENAL (GLASS TILES ANIMATED BANNER + PILLNAV) -->
 <div align="center">
 
-## ⚡ Tech Arsenal
+<img src="https://raw.githubusercontent.com/parth10march/parth10march/main/glass_tech.svg" width="100%" alt="Tech Arsenal"/>
 
-<br/>
+<br/><br/>
 
 ### 🧠 AI / ML / Data Science
 
@@ -126,12 +131,12 @@ fun_fact: >
 
 ---
 
-<!-- CONNECT -->
+<!-- SECTION 4: CONNECT WITH ME (GLASS TILES ANIMATED BANNER) -->
 <div align="center">
 
-## 🌐 Connect With Me
+<img src="https://raw.githubusercontent.com/parth10march/parth10march/main/glass_connect.svg" width="100%" alt="Connect With Me"/>
 
-<br/>
+<br/><br/>
 
 <a href="https://github.com/parth10march" target="_blank">
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&color=6C63FF" alt="GitHub"/>

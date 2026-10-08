@@ -1,0 +1,137 @@
+.glass-tiles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background: #0d1117;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ambient chromatic glowing lights behind the tiles */
+.glass-tiles-lights {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  filter: blur(60px);
+  opacity: 0.75;
+  z-index: 1;
+}
+
+.glass-light {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+}
+
+.light-a {
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(circle, var(--color-a, #6C63FF) 0%, transparent 70%);
+  top: 10%;
+  left: 15%;
+  animation: float-a var(--anim-speed, 8s) ease-in-out infinite alternate;
+}
+
+.light-b {
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, var(--color-b, #00F0FF) 0%, transparent 70%);
+  bottom: 10%;
+  right: 15%;
+  animation: float-b calc(var(--anim-speed, 8s) * 1.2) ease-in-out infinite alternate;
+}
+
+.light-c {
+  width: 45%;
+  height: 45%;
+  background: radial-gradient(circle, var(--color-c, #FF007F) 0%, transparent 70%);
+  top: 40%;
+  right: 25%;
+  animation: float-c calc(var(--anim-speed, 8s) * 0.9) ease-in-out infinite alternate;
+}
+
+@keyframes float-a {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(25%, 20%) scale(1.15); }
+}
+
+@keyframes float-b {
+  0% { transform: translate(0, 0) scale(1.1); }
+  100% { transform: translate(-20%, -25%) scale(0.9); }
+}
+
+@keyframes float-c {
+  0% { transform: translate(0, 0) scale(0.95); }
+  100% { transform: translate(-15%, 15%) scale(1.2); }
+}
+
+/* Glass Tiles Grid */
+.glass-tiles-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--tile-cols, 12), 1fr);
+  grid-template-rows: repeat(var(--tile-rows, 6), 1fr);
+  gap: 6px;
+  padding: 8px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+/* Individual Glass Tile */
+.glass-tile {
+  position: relative;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: tile-shimmer calc(var(--anim-speed, 8s) * 0.7) ease-in-out infinite alternate;
+}
+
+.glass-tile:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.glass-tile-shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.02) 40%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+@keyframes tile-shimmer {
+  0% {
+    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  50% {
+    opacity: 0.95;
+    background: rgba(255, 255, 255, 0.055);
+  }
+  100% {
+    opacity: 0.75;
+    background: rgba(255, 255, 255, 0.035);
+  }
+}
+
+/* Content layer on top of glass tiles */
+.glass-tiles-content {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
